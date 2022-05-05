@@ -1,5 +1,5 @@
 import React from 'react'
-import {Switch, Route} from 'react-router-dom'
+import {Switch, Route, Redirect} from 'react-router-dom'
 
 import TopHeader from '../../components/sanbox/TopHeader'
 import SideMenu from '../../components/sanbox/SideMenu'
@@ -17,6 +17,8 @@ export default function sanbox() {
         <Route path="/user-manage/list" component={UserList}></Route>
         <Route path="/right-manage/role/list" component={RoleList}></Route>
         <Route path="/right-manage/right/list" component={RightList}></Route>
+
+        <Redirect from="/" to="/home" ></Redirect>
       </Switch>
     </div>
   )
