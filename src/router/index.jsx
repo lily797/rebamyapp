@@ -8,6 +8,7 @@ export default function IndexRouter() {
             <Switch>
                 <Route path="/login" component={Login}></Route>
                 {/* <Route path="/" component={Sanbox}></Route> */}
+                {/* 这里做了理由拦截 */}
                 <Route
                     path="/"
                     render={() => {
